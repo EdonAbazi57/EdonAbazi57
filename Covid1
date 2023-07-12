@@ -1,0 +1,6 @@
+#newviz
+Select Location, total_cases, total_deaths, population,gdp_per_capita,
+(total_cases/population)*100 as PercentPopulationInfected
+From CovidDeaths
+Where total_deaths is not null 
+order by total_deaths desc
